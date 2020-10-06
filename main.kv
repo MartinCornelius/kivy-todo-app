@@ -1,0 +1,15 @@
+#:include ui/alltodoscreen.kv
+#:include ui/newtodoscreen.kv
+
+BoxLayout:
+    orientation: 'vertical'
+    MDToolbar:
+        title: "Martin's Todo"
+    ScreenManager:
+        id: screen_manager
+        AllTodoScreen:
+            id: all_todo_screen
+            name: "all_todo_screen"
+        NewTodoScreen:
+            id: new_todo_screen
+            name: "new_todo_screen"
